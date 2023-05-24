@@ -1,7 +1,8 @@
 const Home = () => {
     return (
         <>
-        홈
+        ACMA : Auto Classified Memo App <br />
+        개발자 : 박재하 <br />
         </>
     );
 };
