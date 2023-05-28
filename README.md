@@ -8,21 +8,20 @@
 <br />
 #### MENU
 
-<img width="753" alt="스크린샷 2023-05-28 오후 3 06 34" src="https://github.com/soddokayo/acma.fe/assets/89368738/4ce0525c-f2fd-4ac6-8021-8598a6da3714">
-![menu](./readme/1_menu.png)
+![1_MENU](https://github.com/soddokayo/acma.fe/assets/89368738/ac807a9b-cbe7-4f2c-919e-ce44d86de3b4)
 
 메뉴 구성은 위와 같습니다.
 <br />
 #### CREATE
 
-<img width="756" alt="스크린샷 2023-05-28 오후 3 06 22" src="https://github.com/soddokayo/acma.fe/assets/89368738/ac807a9b-cbe7-4f2c-919e-ce44d86de3b4">
-![create](./readme/2_create.png)
+![2_CREATE](https://github.com/soddokayo/acma.fe/assets/89368738/4ce0525c-f2fd-4ac6-8021-8598a6da3714)
+
 Create를 통해 작성자와 텍스트만 입력하면 메모를 생성할 수 있습니다.
 <br />
 #### LIST
 
-<img width="752" alt="스크린샷 2023-05-28 오후 3 07 29" src="https://github.com/soddokayo/acma.fe/assets/89368738/aacd4a2d-21bd-4b9a-a674-a8c423452485">
-![list](./readme/3_list.png)
+![3_LIST](https://github.com/soddokayo/acma.fe/assets/89368738/aacd4a2d-21bd-4b9a-a674-a8c423452485)
+
 List에 추가될 때는 자동으로 카테고리가 분류되어 들어가는 것을 확인할 수 있습니다. <br />List 내 카테고리 탭을 클릭하면 분류된 주제별로 묶어서 볼 수 있습니다.
 
 ## 원리
@@ -34,7 +33,6 @@ List에 추가될 때는 자동으로 카테고리가 분류되어 들어가는 
 주요 모델인 Memo 객체의 변화를 도식화하면 위와 같습니다.
 
 ![4_ACMA_설명](https://github.com/soddokayo/acma.fe/assets/89368738/10bf1af1-5b91-4c34-8958-2e2ba70bd7c3)
-![desc](./readme/4_diagram.png)
 
 ## 기술스택
 
