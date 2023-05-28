@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
     const [author, setAuthor] = useState('');
     const [text, setText] = useState('');
+    const [button, setButton] = useState(true);
+    const navigate = useNavigate();
 
     const onAuthorChange = (e) => {
         e.preventDefault();
@@ -23,11 +26,14 @@ const Create = () => {
             text: text,
         };
 
+        setButton(false); // disable button
         axios
             .post(process.env.REACT_APP_BE_URL+"/api/memo?useFile=True", memo)
-            .then((res) => console.log(res));
-
-
+            .then((res) => {
+                //console.log(res);
+                setButton(true);
+                navigate('/list'); // navigate to list
+            });
     };
 
     return (
@@ -45,7 +51,7 @@ const Create = () => {
                 <textarea class="form-control" id="inputText" rows="3" placeholder="sample text" value={text} onChange={onTextChange} />
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Create Memo</button>
+            <button disabled={!button} type="submit" class="btn btn-primary">Create Memo</button>
             </form>
         </div>
     );
